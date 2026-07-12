@@ -68,23 +68,25 @@ const startBtn = document.getElementById("startBtn");
 const landing = document.querySelector(".landing");
 const wishPage = document.getElementById("wishPage");
 
-startBtn.addEventListener("click",function(){
+startBtn.addEventListener("click", () => {
 
-    music.play().catch(()=>{});
+    // Play music
+    music.play().catch(() => {});
 
+    // Animate welcome page
     welcome.classList.add("fadeOut");
 
-    setTimeout(function(){
+    // Wait for animation to finish
+    setTimeout(() => {
 
-        welcome.style.display="none";
+        welcome.classList.add("hidden");
 
         loading.classList.remove("hidden");
-
         loading.classList.add("fadeIn");
 
         loadingAnimation();
 
-    },1500);
+    }, 1500);
 
 });
 
