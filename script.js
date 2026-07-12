@@ -1,9 +1,4 @@
-const welcome = document.getElementById("welcome");
-const countdown = document.getElementById("countdown");
-const reveal = document.getElementById("reveal");
-const celebration = document.getElementById("celebration");
-
-const music = document.getElementById("music");// ------------------------------
+// ------------------------------
 // Floating Hearts
 // ------------------------------
 
@@ -73,20 +68,11 @@ const startBtn = document.getElementById("startBtn");
 const landing = document.querySelector(".landing");
 const wishPage = document.getElementById("wishPage");
 
-startBtn.addEventListener("click", function () {
+startBtn.addEventListener("click",function(){
 
-    if (music) {
-        music.play().catch(() => {});
-    }
+    landing.style.display="none";
 
-    // Hide welcome screen
-    welcome.classList.add("hidden");
-
-    // Show loading screen
-    loading.classList.remove("hidden");
-
-    // Start loading animation
-    loadingAnimation();
+    wishPage.classList.remove("hidden");
 
 });
 
