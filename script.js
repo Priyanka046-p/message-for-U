@@ -1,4 +1,12 @@
-// ------------------------------
+const welcome = document.getElementById("welcome");
+const loading = document.getElementById("loading");
+const countdown = document.getElementById("countdown");
+const reveal = document.getElementById("reveal");
+const wishPage = document.getElementById("wishPage");
+const celebration = document.getElementById("celebration");
+
+const startBtn = document.getElementById("startBtn");
+const music = document.getElementById("music");// ------------------------------
 // Floating Hearts
 // ------------------------------
 
