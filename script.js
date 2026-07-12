@@ -68,27 +68,14 @@ const startBtn = document.getElementById("startBtn");
 const landing = document.querySelector(".landing");
 const wishPage = document.getElementById("wishPage");
 
-startBtn.addEventListener("click", () => {
+startBtn.addEventListener("click",function(){
 
-    // Play music
-    music.play().catch(() => {});
+    landing.style.display="none";
 
-    // Animate welcome page
-    welcome.classList.add("fadeOut");
-
-    // Wait for animation to finish
-    setTimeout(() => {
-
-        welcome.classList.add("hidden");
-
-        loading.classList.remove("hidden");
-        loading.classList.add("fadeIn");
-
-        loadingAnimation();
-
-    }, 1500);
+    wishPage.classList.remove("hidden");
 
 });
+
 
 // ------------------------------
 // Celebration
