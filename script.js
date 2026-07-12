@@ -70,12 +70,23 @@ const wishPage = document.getElementById("wishPage");
 
 startBtn.addEventListener("click",function(){
 
-    landing.style.display="none";
+    music.play().catch(()=>{});
 
-    wishPage.classList.remove("hidden");
+    welcome.classList.add("fadeOut");
+
+    setTimeout(function(){
+
+        welcome.style.display="none";
+
+        loading.classList.remove("hidden");
+
+        loading.classList.add("fadeIn");
+
+        loadingAnimation();
+
+    },1500);
 
 });
-
 
 // ------------------------------
 // Celebration
